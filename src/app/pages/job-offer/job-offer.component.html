@@ -1,0 +1,26 @@
+<app-logo></app-logo>
+<div class="container-fluid h-100 align-items-center">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Título</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Empresa</th>
+          <th scope="col">Ciudad</th>
+          <th scope="col">Salario</th>
+          <th scope="col">Contacto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ jobOffer.titulo }}</td>
+          <td>{{ jobOffer.descripcion }}</td>
+          <td>{{ jobOffer.empresa }}</td>
+          <td>{{ jobOffer.ciudad }}</td>
+          <td>{{ jobOffer.salario }} €</td>
+          <td>{{ jobOffer.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <app-back-button></app-back-button>
+  </div>

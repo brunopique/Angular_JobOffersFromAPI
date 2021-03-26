@@ -1,0 +1,20 @@
+<app-logo></app-logo>
+<div class="container h-100 align-items-center">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Oferta</th>
+        <th scope="col">Detalles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let jobOffer of this.jobOffers">
+        <td>{{ jobOffer.titulo }}</td>
+        <td><a (click)="this.gotoJobOfferDetail(jobOffer.id)" class="btn btn-info">Ver</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="d-flex align-items-center justify-content-center" style="margin: 15px 15px;">
+    <a [routerLink]="[ '/login']" class="btn btn-primary">Login</a>
+  </div>
+</div>

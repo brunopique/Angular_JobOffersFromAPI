@@ -1,0 +1,33 @@
+<app-logo></app-logo>
+<div class="container">
+    <form #offerForm="ngForm" (ngSubmit)="onSubmit(offerForm)">
+        <div class="form-group">
+            <label>Título</label>
+            <input type="text" class="form-control" name="username" #titulo [(ngModel)]="offerModel.titulo" maxlength="100">
+        </div>
+        <div class="form-group">
+            <label>Descripción</label>
+            <input type="text" class="form-control" name="username" #descripcion [(ngModel)]="offerModel.descripcion" maxlength="300">
+        </div>
+        <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" class="form-control" name="username" #empresa [(ngModel)]="offerModel.empresa" maxlength="50">
+        </div>
+        <div class="form-group">
+            <label>Salario</label>
+            <input type="number" class="form-control" name="username" #salario [(ngModel)]="offerModel.salario">
+        </div>
+        <div class="form-group">
+            <label>Ciudad</label>
+            <input type="text" class="form-control" name="username" #ciudad [(ngModel)]="offerModel.ciudad" maxlength="50">
+        </div>
+        <div class="form-group">
+            <label>Email de contacto</label>
+            <input type="email" class="form-control" name="username" #email [(ngModel)]="offerModel.email" maxlength="50">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <div style="margin-top: 10px;">
+        <app-back-button></app-back-button>
+    </div>
+</div>
